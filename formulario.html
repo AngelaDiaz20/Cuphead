@@ -2,12 +2,15 @@
 
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="Cuphead" author="Angela Díaz">
         <title>Cuphead</title>
         <link type="image/x-icon" href="img/cup.svg" rel="icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
     </head>
 
-    <body class="body_all">
+    <body class="body_form">
         <header>
             <img src="img/header2.png" alt="" id="header">
             <div class="interior">
@@ -28,29 +31,36 @@
             </div>
         </header>
 
-        <!-- control type text -->
-        <label for="nombre">Nombre</label>
-        <input name="nombre" id="nombre" type="text" placeholder="Ingresar Nombre"> <br><br>
+        <div class="login-container">
+            <div class="login-info-container">
+                <form class="inputs-container">
+                    <h1 class="title">Déjanos tu opinión</h1>
+                    <input class="input" type="text" placeholder="Nombre">
+                    <input class="input" type="number" placeholder="Edad" min="0">
+                    <div>
+                        <label form="calificación">¿Qué te pareció el juego?</label><br><br>
+                        <input name="calificación" id="calificación" checked type="radio"> <img src="img/bueno.png" width="40">  
+                        <input name="calificación" id="calificación" type="radio"><img src="img/regular.png" width="45"> 
+                        <input name="calificación" id="calificación" type="radio"><img src="img/malo.png" width="60"> 
+                    </div><br>
+                    
+                    <div>
+                    <label for="deporte">Nivel de experticia que lo jugaste</label><br><br>
+                        <input name="experticia" id="experticia" type="checkbox">Fácil
+                        <input name="experticia" id="experticia" type="checkbox">Regular
+                        <input name="experticia" id="experticia" type="checkbox">Experto
+                    </div><br>
+                    <div>
+                        <label for="observaciones">Opinión</label><br>
+                        <textarea rows="5" cols="30" name="opinión"></textarea>
+                    </div>
 
-        <!-- control type number -->
-            <label for="edad">Edad</label>
-            <input name="edad" id="edad" type="number" placeholder="Ingresar edad" min="0"> <br><br>
+                    <a class="form-group" href="formulario.html">
+                        <div class="btonform"> Enviar respuestas </div><a>
+                </form>
+            </div>
+              <img class="image-container" src="img/cup_login.gif" alt="">
+        </div>
 
-        <!-- control type radio -->
-        <label form="calificación">¿Qué te pareció el juego?</label><br>
-        <input name="calificación" id="calificación" checked type="radio"> <img src="img/bueno.png" width="40">  
-        <input name="calificación" id="calificación" type="radio"><img src="img/regular.png" width="45"> 
-        <input name="calificación" id="calificación" type="radio"><img src="img/malo.png" width="60"> <br><br>
-
-        <!-- control type checkbox -->
-        <label for="deporte">Nivel de experticia que lo jugaste</label><br>
-        <input name="experticia" id="experticia" type="checkbox">Fácil
-        <input name="experticia" id="experticia" type="checkbox">Regular
-        <input name="experticia" id="experticia" type="checkbox">Experto<br><br>
-
-        <!-- control type textarea -->
-        <label for="observaciones">Opinión</label><br>
-        <textarea rows="5" cols="30" name="opinión"></textarea> <br><br>
-       
-        </center>
-    
+    </body>
+</html>    

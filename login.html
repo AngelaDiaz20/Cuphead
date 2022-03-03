@@ -1,16 +1,13 @@
 <!DOCTYPE html>
     <html lang="es-Es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio de sesión</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <script src="https://kit.fontawesome.com/30232a80d3.js" crossorigin="anonymous"></script>
-        <link rel="shotcut icon" href="img/21577.png">
-
-    </head>
+        <head>
+            <meta charset="utf-8">
+            <meta name="Cuphead" author="Angela Díaz">
+            <title>Cuphead</title>
+            <link type="image/x-icon" href="img/cup.svg" rel="icon">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        </head>
 
     <body>
         <body class="body_login">
@@ -38,24 +35,37 @@
                
                 <form action="" method="post"  class="form-login">  
                     
+                    <h2>Inicio de sesión</h2>
+                    <h4>Iniciar sesión con:</h4>
+                    <div class="social-login">
+                        <div class="social-login-element">
+                            <img class="imgg" src="img/google 1.svg" alt="google-image">
+                            <span>Google</span>
+                        </div>
+                        <div class="social-login-element1">
+                            <img class="imgf" src="img/Facebook_f_logo_(2019).svg" alt="facebook-image">
+                            <span>Facebook</span>
+                        </div>
+                    </div>
+
                     <div class="log1"><img src="img/latest-15.png"></div>
                     
+                    
+
                     <div class="form-group">
                         <label for="usuario" class="form-label"></label>
                         <input type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
                     </div>
                     <div class="form-group">
                         <label for="password" class="form-label"></label>
-                        <input type="text" name="password" id="password" placeholder="Ingresa tu contraseña">
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
                     </div>
+                    
+                    <a class="form-group" href="formulario.html">
+                        <div class="bton-morado"> Ingresar </div><a>
+                    
                     <div class="form-group">
-                        <input type="submit" name="registrar" value="Ingresar" class="bton-morado">
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="registrar" value="Registrar" class="bton-morado">
-                    </div>
-                    <div class="form-group">
-                        <a href="Recordar contraseña" class="form-olvido"></a>
+                        <a href="" class="form-olvido">Olvidaste tu contraseña</a>
                     </div>
                 </form>
             </section>
