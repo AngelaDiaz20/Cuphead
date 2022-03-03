@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https: //fonts.googleapis.com/css2? family= Concert+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    text-decoration-line: none;
 }
 
-body{
+.body_index{
     background-color: black;
-    background-image: url("../img/fondo2.png") ;
+    background-image: url("../img/fondo2.png");
+}
+
+.body_all{
+    background-color: #000000;
+    background-image: url("../img/background 1.png");
+    background-repeat: no-repeat;
 }
 
 .bton{
@@ -17,11 +27,12 @@ body{
     display: inline-block;
     padding: 15px 30px;
     color: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 24px;
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
+    text-shadow: 3px 3px 7px rgba(230, 33, 220, 0.774);
 }
 
 .bton:hover{
@@ -133,6 +144,7 @@ header{
     position: relative;
     transition: .3s linear;
     z-index: 1000;
+
 }
 
 .navegacion ul li:hover{
@@ -143,7 +155,7 @@ header{
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding: 12px 20px;
     transition: .3s linear;
@@ -175,3 +187,689 @@ header{
     display: block;
 }
 
+/*Todas las páginas, menos index*/
+
+.caja{
+    background-color: #ffffffd3;
+    margin: 20px 300px 20px;
+    padding: 20px 50px;
+    box-shadow: 0 0 7px black;
+}
+
+h1{
+    text-align: center;
+    color:#992525c9;
+    font-family: 'Fredoka', sans-serif;
+    text-shadow: 3px 3px 3px rgba(29, 3, 3, 0.322);
+    margin-bottom: 10px;
+}
+
+ h2{
+    color:#992525c9;
+    font-family: 'Fredoka', sans-serif;
+    margin:10px -80px 10px 0; 
+    text-align:center;
+    text-shadow: 3px 3px 3px rgba(29, 3, 3, 0.322);
+}
+
+table{
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.63);
+
+} 
+
+table th, table td {
+    background-color: #c9001b7e;
+    border: 2px solid black;
+}
+
+.article_cup{
+    margin: 10px 20px;
+    text-align:justify
+}
+
+.article_cup p{
+    margin-right: -80px;
+}
+
+.containercup{
+    margin: 20px 20px;
+    padding: 0px 40px;
+    height: 150px;
+    background:linear-gradient(to left, #ec112e7e, #000000b4);
+    border-radius: 10px;
+    border: groove;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.589); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.952);
+}
+
+.imgvg{
+    width: 450px;
+}
+
+.boxcup{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-cup{
+    opacity: 0;
+    color: #ffffff;
+}
+
+.boxcup:hover .p-cup, .p-cup{
+    font-family:'Press Start 2P', cursive ;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.801); 
+}
+
+.containercup:hover{
+    background-color: #000000;
+    transition: 1s;
+}
+
+.boxcup:hover{
+    transition: all 2s;
+}
+
+.boxcup:hover .imgvg{
+    opacity: 60%;
+    transition: 1s;
+}
+
+.boxcup:hover .p-cup{
+    opacity: 1;
+    transition: 1s;
+}
+
+/*Personajes*/
+
+.container_person{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    background-color: #721675;
+
+}
+
+.table1{
+    width: 4000px;
+}
+
+.container_person table{
+    margin: 300px;
+}
+
+.table1:hover{
+    transform: translate(800px);
+}
+
+/*login*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.body_login{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/cuphead-show-2589459.jpg);
+    background-size: cover;    
+}
+
+p{
+    text-align: justify;
+}
+
+#login{ /*id da estilo solo a la sección, sin contar clases internas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#usuario, #password{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form-login h1{
+    text-align: center;
+}
+
+.form-login i{
+    color: var(--purple-color);
+    background-color: var(--white-color);
+    padding: 1rem 0.8rem;
+    border-radius: 100%;
+    border: 4px solid var(--gray-color);
+}
+
+.form-login{
+    margin-top: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 2px var(--dark-color);
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.form-group{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input{
+    border: 3px solid var(--gray-color);
+    padding: 5px;
+    outline: none;
+}
+
+.form-input:focus{
+    border: 3px solid var(--purple-color);
+}
+
+.form-input::placeholder{
+    font-size: 00.8rem;
+}
+
+.bton-azul, .bton-morado{
+    padding: 5px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.bton-azul{
+    background-color:rgba(255, 0, 0, 0.699);
+}
+
+.bton-morado{
+    background-color: rgba(255, 0, 0, 0.699);
+}
+
+.form-olvido{
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 0.9rem;
+}
+
+/*videojuego*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body_videojuego{
+    background-color:rgba(0, 0, 0, 0.925);
+    /*background-image: url(../img/background\ 1.png);*/
+    background-size: cover;
+}
+
+
+.container-all{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-box a{
+    text-decoration: none;
+    color: black;
+}
+
+.box0, .box1, .box2, .box3{
+    width: 300px;
+    height: 200px;
+    margin: 0 0 20px 20px;
+    background: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /*cambia la flecha del cursor a una manita*/
+    transition: all 300ms;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.226);
+}
+
+.box0:hover, .box1:hover, .box2:hover, .box3:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px rgba(78, 17, 17, 0.623);
+}
+
+.box0 h4, .box0 p, .box1 h4, .box1 p, .box2 h4, .box2 p, .box3 h4, .box3 p{
+    position: relative;
+    z-index: 1; /*Que se mantenga por encima del recuadro rojo*/
+    transition: all 200ms;
+}
+
+.box0 h4, .box0 p, .box1 h4, .box1 p, .box2 h4, .box2 p, .box3 h4, .box3 p{
+    margin-top: 10px;
+}
+
+.box0 h4, .box1 h4, .box2 h4, .box3 h4{
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 30px;
+    transform: translateY(30px);
+    color: #ffffff;
+    text-shadow: 10px 10px 20px rgb(107, 102, 102);;
+    background-color: #0000004b;
+}
+
+.box0:hover h4, .box1:hover h4, .box2:hover h4, .box3:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+
+.box0 p, .box1 p, .box2 p, .box3 p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    margin: 15px 20px;
+}
+
+.box0:hover p, .box1:hover p, .box2:hover p, .box3:hover p{
+    transform: translate(0);
+    opacity: 1;
+    color: white;
+}
+
+.box0 .background-hover, .box1 .background-hover, .box2 .background-hover, .box3 .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left:-200px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgba(38, 0, 255, 0.507), rgba(255, 0, 0, 0.527));
+}
+
+.box0:hover .background-hover, .box1:hover .background-hover, .box2:hover .background-hover, .box3:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+.box0{
+ background-image: url(../img/isla1.png);
+ background-size: cover;
+ background-position: -15px;
+}
+
+.box1{
+    background-image: url(../img/isla_2.jpeg);
+    background-size: cover;
+    background-position: -25px;
+   }
+
+.box2{
+    background-image: url(../img/isla3.jpeg);
+    background-size: cover;
+    background-position: -15px;
+}
+
+.box3{
+    background-image: url(../img/isla_4.jpeg);
+    background-size: cover;
+    background-position: -30px;
+}
+
+.detalle{
+    width: 1200px;
+    margin-left: -50px;
+}
+.detail{
+    color: white;
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+article{
+    width: 700px;
+    margin: 40px 0px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section h2{
+    color: white;
+}
+
+section h3{
+    color: white;
+    margin-top: 20px;
+    
+}
+.consolas, .funcionalidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.consolas p, .funcionalidades p{
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #4d4b4b;
+    border-radius: 5px;
+    color: white;
+}
+
+.consolas p:hover, .funcionalidades p:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+/*calificación estrellas*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 100px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  .skill form{
+      margin-bottom: 20px;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+ .star p{
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    float: left;
+    background-color: #000000;
+    padding-bottom: 8px;
+}
+
+.reseña{
+    margin: 50px 200px;
+    
+}
+
+.rate{
+    margin-bottom: 10px;
+}
+
+.reseña iframe{
+    margin-top: 200px;
+}
+
+.skill{
+    width: 500px;
+    margin: 60px auto 280px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(255, 185, 185, 0.507);
+    background-color: #242222cb;
+}
+  
+.skill li{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.skill p{
+    float: left;
+}
+
+.skill h1{
+      font-size: 60px;
+      color: white;
+  }
+  
+.bar{
+    background: #353b48;
+    display: block;
+    height: 8x;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25,);
+  }
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(236, 133, 133, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+.bar span{
+      height: 12px;
+      float: left;
+      background:linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+  }
+  
+.five_star{
+      width:90%;
+      animation: html 3%;
+  }
+
+.four_star{
+    width:7%;
+    animation: html 3%;
+}
+
+.three_star{
+    width:2%;
+    animation: html 3%;
+}
+
+.two_star{
+    width:1%;
+    animation: html 3%; 
+}
+
+.btnopinion{
+    display: flex;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #e92222ad;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.opiniones{
+    margin-left: -200px;
+}
+
+.btnopinion a{
+    color: white;
+}
+
+#comentarios{
+    margin: 100px -40px;
+}
+
+.com{
+    background-color: #450957c9;
+    width:500px;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.com i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.pcom{
+    color: white;
+}
+.pstar{
+    color: orange;
+}
+
+.consol{
+    width: 60px;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #4d4b4b;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user h3{
+    margin: -10px 10px;
+}
+
+/*Serie*/
+
+.body_serie{
+    background-image: url(../img/The-Cuphead-Show.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.serie_netflix p{ 
+    color: white;
+    margin: 0 20px;
+}
+
+.serie_netflix{
+    padding: 10px;
+    width: 500px;
+    margin: 250px 60px;
+}
+
+.btnnetflix{
+    margin: -180px 200px;
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 0 10px #000000, 0 0 10px #ff1706, 0 0 100px #ff0000;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.btonN{
+    text-decoration: none;
+    color: white;
+}
+
+.btnnetflix img{
+    margin-top: -20px;
+    height: 70px;
+}
+
+.btnnetflix:hover{
+    transform: scale(1.2);
+    transition-duration: 1s ;
+}
+
+/*personajes*/
+
+.body_personaje{
+    background-color: #000000f1;
+    background-image: url(../img/dontae-rice-cuphex-complete-small\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja2{
+    background-color: #ffffff9a;
+    margin: 20px 430px 20px;
+    padding: 20px 50px;
+    box-shadow: 0 0 7px rgb(216, 69, 204);
+}
+
+#login img{
+    height: 150px;
+}
+
+.log1{
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.377);
+    padding: 100px 0;
+}
+
+.videos iframe{
+    margin-left: 150px;
+}
